@@ -1,14 +1,18 @@
 public class ProgrammeFamille {
 	
+	
+	/** 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 
         /*------------------------------------------------------*/
         /* Plan pour la fonction principale :                   */
         /*                                                      */
-        /*  0.  D�clarations des tableaux de noms et pr�noms    */
+        /*  0.  Déclarations des tableaux de noms et prénoms    */
         /*  1.  Affichage des tableaux                          */
-        /*  2.  Cr�ation de la famille SW                       */
-        /*  3.  Cr�ation et ajouts des Personne dans la Famille */
+        /*  2.  Création de la famille SW                       */
+        /*  3.  Création et ajouts des Personne dans la Famille */
         /*  4.  Affichage de la Famille                         */
         /*  5.  Tri de la Famille                               */
         /*  6.  Affichage de la Famille                         */
@@ -89,10 +93,10 @@ public class ProgrammeFamille {
     }
 	
 
-	/** Ajoute pfPersonne � la famille pfFamille
+	/** Ajoute pfPersonne à la famille pfFamille
 	 *
 	 * @param pfFamille IN/OUT : la famille
-	 * @param pfPersonne IN : le membre � ajouter
+	 * @param pfPersonne IN : le membre à ajouter
 	 *
 	 * @throws Exception si plus de place dans la famille
 	 */
@@ -117,6 +121,10 @@ public class ProgrammeFamille {
 	}
 	
 	
+	
+	/** Trie la famille par ordre alphabétique
+	 * @param pfFamille
+	 */
 	public static void trierFamille(Famille pfFamille) {
 		boolean permut = true;
 		while (permut) {
@@ -167,6 +175,10 @@ public class ProgrammeFamille {
 	}
 	
 	
+	/** 
+	 * @param pfPersonne
+	 * @return String
+	 */
 	public static String toString(Personne pfPersonne) {
 		String infos = "";
 		infos += "Prenom: " + pfPersonne.prenom + "\n";
@@ -178,6 +190,12 @@ public class ProgrammeFamille {
 	}
 
 	
+	
+	/** Retourne vrai si la personne et dans le tableau et faux sinon
+	 * @param pfTab
+	 * @param pfPersonne
+	 * @return boolean
+	 */
 	public static boolean inTab(Personne[] pfTab, Personne pfPersonne) {
 		for (Personne i : pfTab) {
 			if(i==pfPersonne) {
