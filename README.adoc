@@ -3,7 +3,7 @@
 ==== Pour compiler mon projet il suffit de faire : 
 	. mvn clean
 	. mvn compile
-	. mvn packagehf
+	. mvn package
 
 ==== Pour créer la documentation du projet : 
 	* mvn javadoc:javadoc
